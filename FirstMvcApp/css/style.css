@@ -1,0 +1,169 @@
+.mainbody{
+    background-color: #D8D8D8;
+}
+.bodyleft{
+    
+    float: left;
+    background-color: dimgrey;
+    color: white;
+    
+} 
+.bodyleftlogo{
+    background-color: #2E9AFE;
+    color: white;
+    height: 55px;
+    text-align: center;
+    margin-top: 0;
+    
+}
+.bodyleftlogo > h1{
+    padding-top: 10px;
+    margin-top: 0;
+}
+.profile-info{
+    text-align: center;
+}
+.profile-picture > img{
+    margin: 10px;
+}
+.dashboard-button{
+
+    
+}
+.dashboard-btn-style{
+    background-color: black;
+    color: gray;
+    border-radius: 0px;
+    margin:0 auto;
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+.dashboard-btn-style:hover{
+    color: white;
+}
+.bodyleftfooter{
+    height: 235px;
+}
+
+
+
+.bodyright{
+    float: right;
+}
+.navbar-style{
+    background-color: white;
+    width:100%;
+    border: 1px solid #E6E6E6;
+    border-radius: 0px;
+}
+.mynotificationbutto{
+    padding-left: 415px;
+    
+}
+.dashboard-body-left{
+    background-color:white;
+}
+
+
+.earning{
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    
+}
+.earning-title{
+    border-bottom: 1px solid gray;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.linegraph{
+    background-color: white;
+    widows: 100%;
+}
+
+.subtitle-right{
+    margin-top: 12px;
+}
+/*line graph start*/
+#placeholder { 
+/*    width: 450px;*/
+    height: 200px; }
+/*line graph end*/
+
+.tran{
+    margin-top: 40px;
+    border-top: 5px solid black;
+}
+.tran-title{
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+.tran-td{
+    background-color: darkgray;
+}
+.dashboard-body-right{
+    background-color: white;
+    margin: 0 5px 0 35px;
+}
+.mycourse{
+    background-color: white;
+}
+
+/*skil progress bar*/
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:30%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+width:50px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+/* end of skil progress bar*/
+
+
+

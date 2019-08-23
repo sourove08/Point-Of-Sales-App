@@ -1,0 +1,170 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboad</title>
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/style.css">
+
+    <link href="~/Content/DataTables/css/dataTables.bootstrap.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    
+    @RenderSection("styles",false)
+</head>
+<body>
+
+    <div class="container mainbody">
+        <div class="row">
+
+            <div class="bodyleft col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                <div class="row">
+                    <div class="bodyleftlogo">
+                        <h1>CMS</h1>
+                    </div>
+                </div>
+
+                <div class="profile-info">
+                    <div class="profile-picture">
+                        <img src="~/images/profile.jpg" alt="profile pic" class="img-responsive img-circle" width="150px">
+                    </div>
+                    <h3>Alexander</h3>
+                </div>
+                <div class="dashboard-button">
+
+                    <div class="row">
+                        <a href="#" class="btn dashboard-btn-style"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</a>
+                        <a href="#" class="btn dashboard-btn-style"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Message</a>
+                        <a href="#" class="btn dashboard-btn-style"><i class="fa fa-graduation-cap" aria-hidden="true"></i> My Courses</a>
+                        <a href="#" class="btn dashboard-btn-style"><i class="fa fa-line-chart" aria-hidden="true"></i> Earning</a>
+                        <a href="#" class="btn dashboard-btn-style"><i class="fa fa-list-alt" aria-hidden="true"></i> Statement</a>
+                        <a href="#" class="btn dashboard-btn-style"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+
+                    </div>
+
+                </div><!-- Dashboard button -->
+                <div class="bodyleftfooter">
+                </div>
+
+            </div>
+
+
+            <div class="bodyright col-lg-10 col-md-10 col-sm-10 col-xs-10">
+
+                <div class="row">
+                    <div class="navbar navbar navbar-style">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collpase" data-terget="#example">
+                                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="example">
+                                    <ul class="nav navbar-nav">
+
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Forum </b><span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">One more separated link</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Courses</b><span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">One more separated link</a></li>
+                                            </ul>
+                                        </li>
+
+
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Customer</b> <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">One more separated link</a></li>
+                                            </ul>
+                                        </li>
+
+
+
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Instructor </b><span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">One more separated link</a></li>
+                                            </ul>
+
+
+
+                                        </li>
+
+
+
+                                    </ul>
+                                    <ul class="nav navbar-nav navbar-right mynotificationbutto">
+                                        <li><a href="#"><img src="~/images/profile.jpg" class="img-circle" width="22px"> Notifications</a></li>
+                                    </ul>
+                                    @Html.Partial("_LoginPartial")
+
+                                </div>
+                            </div><!-- end of navbar-header -->
+
+
+
+
+
+                        </div><!--end of container -->
+
+                    </div><!-- end of navbar -->
+                </div><!-- end of row -->
+                @RenderBody()
+               
+
+            </div><!-- ending of bodyright -->
+
+
+
+
+        </div><!--ending of row -->
+
+    </div><!-- end of main body -->
+
+
+    <script src="~/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/myapp.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/DataTables/dataTables.bootstrap.js"></script>
+    <script src="~/Scripts/DataTables/jquery.dataTables.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts",false)
+</body>
+</html>

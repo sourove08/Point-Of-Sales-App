@@ -1,0 +1,38 @@
+﻿@using POS.Models
+@model ICollection<POS.Models.Product>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayName("Product code:")
+            </th>
+            <th>
+                @Html.DisplayName("Product Name:")
+            </th>
+            <th>
+                @Html.DisplayName("Category Name:")
+            </th>
+        </tr>
+    </thead>
+    @{
+        foreach (Product product in Model)
+        {
+
+            <tbody>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => product.Code)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => product.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => product.Category.Name)
+                    </td>
+                </tr>
+            </tbody>
+        }
+    }
+
+
+</table>

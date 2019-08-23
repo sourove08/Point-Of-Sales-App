@@ -1,0 +1,61 @@
+﻿@using POS.Models
+@model POS.Models.Customer
+           
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ @section styles
+ {
+     <link href="~/Content/App/Student/studentStyle.css" rel="stylesheet" />
+ }   
+
+
+        
+        @using (Html.BeginForm())
+        {
+            <div class="form-horizontal">
+                <h4> Customer Insertion</h4>
+                <hr />
+                @Html.ValidationSummary(true)
+              
+                <div class="form-group">
+                    <div class="col-md-2 control-label">Name:</div>
+                    <div class="col-md-6">
+                        @Html.TextBoxFor(m => m.Name, new {name = "Name", @class = "form-control"}) 
+                        @Html.ValidationMessageFor(m=>m.Name)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 control-label">Email:</div>
+                    <div class="col-md-6">
+                        @Html.TextBoxFor(m => m.Email, new {name = "Email", @class = "form-control"})
+                        @Html.ValidationMessageFor(m => m.Email)
+                        
+                        
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 control-label">Address:</div>
+                    <div class="col-md-6">
+                        @Html.TextBoxFor(m => m.Address, new {name = "Address", @class = "form-control"})
+                        @Html.ValidationMessageFor(m => m.Address)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-6" align="right">
+                        <input type="submit" value="Save" />
+                    </div>
+                </div>
+            </div>
+            
+        }
+    @ViewBag.message 
+ @section scripts
+ {
+     <script src="~/Scripts/App/Student/studentInsert.js"></script> 
+ }      
+
+
+   
